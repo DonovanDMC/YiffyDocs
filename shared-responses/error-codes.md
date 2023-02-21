@@ -64,7 +64,7 @@ The following codes are reserved for this service: 1060-1069
 |   1066   |    Check Not Found   |
 
 {% hint style="info" %}
-he codes below can only be returned in the [Shortener](../shortener.md) service.
+The codes below can only be returned in the [Shortener](../shortener.md) service.
 
 The following codes are reserved for this service: 1070-1090
 {% endhint %}
