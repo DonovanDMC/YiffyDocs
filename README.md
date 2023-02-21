@@ -252,23 +252,22 @@ The maximum size of image to get, in powers of 2.  Prefixes such as KB/MB can be
 ```
 {% endswagger-response %}
 
-{% swagger-response status="404: Not Found" description="No Images In Category" %}
+{% swagger-response status="400: Bad Request" description="No Results Found" %}
 ```javascript
 {
   "success": false,
-  "error": {
-    "message": "No images were found in that category.",
-    "type": "filesystem",
-    "category": {
-      "db": "some.category", // category in db format
-      "dir": {
-        "location": "/app/public/V2/some/category",
-        "exists": boolean,
-        "files": 0
-      }
-    }
-  },
-  "code": 1031
+  "error": "No results were found. Try changing your search parameters.",
+  "code": 1041
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="Category Not Found" %}
+```javascript
+{
+  "success": false,
+  "error": "Category not found.",
+  "code": 1030
 }
 ```
 {% endswagger-response %}

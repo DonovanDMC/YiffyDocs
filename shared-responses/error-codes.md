@@ -17,11 +17,16 @@
 |   1024   |              Unknown Route             |
 |   1025   |           Method Not Allowed           |
 |   1030   |        Images Category Not Found       |
-|   1031   |          Images Empty Category         |
+| ~~1031~~ |        ~~Images Empty Category~~       |
 |   1040   |            Images Not Found            |
+|   1041   |            Images No Results           |
 |   1050   | Images Amount Greater Than One (Image) |
 |   1051   |   Images Amount Less Than One (JSON)   |
 |   1052   | Images Amount Greater Than Five (JSON) |
+|   1053   |     Images Image Response Disabled     |
+|   1054   |        Bulk Images Invalid Body        |
+|   1055   |      Bulk Images Invalid Category      |
+|   1056   |         Bulk Images Number >Max        |
 |   1060   |          Thumbs Generic Error          |
 | ~~1061~~ |       ~~Thumbs API Key Required~~      |
 |   1062   |         Thumbs Invalid Post ID         |
